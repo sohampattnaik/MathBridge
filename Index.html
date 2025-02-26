@@ -1,1 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Help for Underprivileged Kids</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-6">
 
+    <h1 class="text-3xl font-bold mb-4">Ask Your Math Question</h1>
+    
+    <form id="questionForm" class="w-full max-w-lg bg-white p-6 rounded-lg shadow-md">
+        <textarea id="question" class="w-full p-2 border rounded-lg" placeholder="Type your question here..." required></textarea>
+        <input type="file" id="imageUpload" class="w-full mt-2 p-2 border rounded-lg" accept="image/*">
+        <button type="submit" class="w-full bg-blue-500 text-white py-2 mt-4 rounded-lg">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-storage.js"></script>
+
+</body>
+</html>
